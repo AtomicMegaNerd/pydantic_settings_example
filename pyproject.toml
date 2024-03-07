@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pydantic-fun1"
+version = "0.1.0"
+description = "Fun with Pyndantic"
+authors = ["Chris Dunphy <chris.dunphy@fglsports.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.6.3"
+pydantic-settings = "^2.2.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.1"
+ruff-lsp = "^0.0.53"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+exclude = [".venv", "build", "dist"]
+venvPath = "."
+venv = ".venv"
+
